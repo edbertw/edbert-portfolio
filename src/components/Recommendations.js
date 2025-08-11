@@ -120,7 +120,7 @@ export default function Recommendations() {
                 {expanded[rec.id] ? 'View Less' : 'View More'}
               </button>
               <a 
-                href={`/src/recommendation_${rec.id === 1 ? 'migrasia' : 'naxon'}.pdf`} 
+                href={`/recommendation_${rec.id === 1 ? 'migrasia' : 'naxon'}.pdf`} 
                 className="btn"
                 target="_blank"
                 rel="noopener noreferrer"
