@@ -1,4 +1,4 @@
-
+import Image from 'next/image';
 
 export default function About() {
     const skills = [
@@ -11,25 +11,25 @@ export default function About() {
       { name: 'React.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
       { name: 'Node.js', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg' },
       { name: 'Express', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg' },
-      { name: 'GitHub Actions', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/githubactions/githubactions-original.svg' },
+      { name: 'G.Actions', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/githubactions/githubactions-original.svg' },
       { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
       { name: 'C++/C', icon: 'https://raw.githubusercontent.com/devicons/devicon/v2.16.0/icons/c/c-plain.svg' },
       { name: 'R', icon: 'https://raw.githubusercontent.com/devicons/devicon/v2.16.0/icons/r/r-original.svg' },
       { name: 'Bash', icon: 'https://raw.githubusercontent.com/devicons/devicon/v2.16.0/icons/bash/bash-original.svg' },
       { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
       { name: 'Django', icon: 'https://raw.githubusercontent.com/devicons/devicon/v2.16.0/icons/django/django-plain.svg' },
-      { name: 'Django REST', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/djangorest/djangorest-original.svg' },
+      { name: 'DRF', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/djangorest/djangorest-original.svg' },
       { name: 'PyTorch', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/pytorch/pytorch-original.svg' },
-      { name: 'TensorFlow', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg' },
+      { name: 'T.Flow', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg' },
       { name: 'Keras', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/keras/keras-original.svg' },
-      { name: 'Scikit-Learn', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/scikitlearn/scikitlearn-original.svg' },
+      { name: 'SK-Learn', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/scikitlearn/scikitlearn-original.svg' },
       { name: 'Pandas', icon: 'https://raw.githubusercontent.com/devicons/devicon/v2.16.0/icons/pandas/pandas-original.svg' },
       { name: 'Matplotlib', icon: 'https://github.com/devicons/devicon/raw/master/icons/matplotlib/matplotlib-original.svg' },
       { name: 'Plotly', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/plotly/plotly-original.svg' },
       { name: 'LangChain', icon: '/src/langchain-color.svg' },
       { name: 'FastAPI', icon: 'https://raw.githubusercontent.com/devicons/devicon/v2.16.0/icons/fastapi/fastapi-original.svg' },
       { name: 'Postman', icon: 'https://github.com/devicons/devicon/raw/master/icons/postman/postman-original.svg' },
-      { name: 'Hugging Face', icon: 'https://huggingface.co/front/assets/huggingface_logo.svg' },
+      { name: 'H. Face', icon: 'https://huggingface.co/front/assets/huggingface_logo.svg' },
       { name: 'Docker', icon: 'https://github.com/devicons/devicon/raw/v2.16.0/icons/docker/docker-original.svg' },
       { name: 'Streamlit', icon: 'https://github.com/devicons/devicon/raw/master/icons/streamlit/streamlit-original.svg' },
       { name: 'Vercel', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/vercel/vercel-original.svg' },
@@ -45,15 +45,15 @@ export default function About() {
           <p>Experience with building smart and AI-powered data systems, real-time dynamic and interactive dashboards, agentic AI and LLM applications utilizing state-of-the-art frameworks and tools, web development and full-stack containerized applications ready for deployment.</p>
         </div>
         <div className="about-img">
-          <img src="/src/2906282.jpg" alt="About Edbert" />
+          <Image src="/src/2906282.jpg" alt="About Edbert" width={600} height={200}/>
         </div>
-        
+       
         <div className="skills-section">
           <h3>Technical <span>Skills</span></h3>
           <div className="skills-grid">
             {skills.map((skill, index) => (
               <div className="skill-item" key={index}>
-                <img src={skill.icon} alt={skill.name} width="40" height="40" />
+                <Image src={skill.icon} alt={skill.name} width={200} height={200} />
                 <span>{skill.name}</span>
               </div>
             ))}

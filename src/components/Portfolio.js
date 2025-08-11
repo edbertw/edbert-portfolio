@@ -1,20 +1,22 @@
+import Image from 'next/image';
+
 export default function Portfolio() {
     const projects = [
       {
         title: "STOCK NAVIGATOR",
-        description: "A one-stop stock analytics platform. Click to learn more",
+        description: "A one-stop, AI-integrated stock analytics platform for enthusiasts. Click to learn more",
         image: "/src/stock.avif",
         link: "https://github.com/edbertw/STOCKNAVIGATOR"
       },
       {
         title: "Grade Your IELTS!",
-        description: "Experimenting different NLP frameworks. Click to learn more",
+        description: "Experimenting different NLP/ML/DL frameworks for automated essay grading. Click to learn more",
         image: "/src/essay.jpg",
         link: "https://github.com/edbertw/Grade-Your-IELTS"
       },
       {
         title: "SignBOT",
-        description: "Inclusivity for the deaf. Click to learn more",
+        description: "Inclusivity for the deaf. Connecting communication bridges. Click to learn more",
         image: "/src/sign.avif",
         link: "https://github.com/LaviniaThosatriavi/NexusAI_SignBOT"
       },
@@ -44,7 +46,7 @@ export default function Portfolio() {
         <div className="portfolio-container">
           {projects.map((project, index) => (
             <div className="portfolio-box" key={index}>
-              <img src={project.image} alt={project.title} />
+              <Image src={project.image} alt={project.title} width={350} height={350} />
               <div className="portfolio-layer">
                 <h4>{project.title}</h4>
                 <p>{project.description}</p>
