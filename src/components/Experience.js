@@ -9,7 +9,7 @@ export default function Experience() {
           "Designed and exposed 30+ protected multimodal LLM, OCR API endpoints using Node.js, Express.js, FastAPI and Cloud Firestore Database",
           "Deployed endpoints on E2 Virtual Machines (VMs) with NGINX proxy on GCP Compute Engine and serverless architectures (Firebase and Cloud Run), integrated to a JavaScript frontend via Cloud Firestore Database and REST",
           "Utilize AWS SigV4 token signing on Google Cloud Storage (GCS) Private Buckets through Cloud CDN and HTTPS Load Balancing for serving of 5+ static assets. Led to 65.7% faster load times and enhanced asset security",
-          "Led full-stack initiatives to automate custom LLM’s high-volume file fetch, processing and uploads with Google, Dropbox and Azure OAuth 2.0 "
+          "Led full-stack initiatives to automate in-house developed LLM’s high-volume file fetch, processing and uploads with Google, Dropbox and Azure OAuth 2.0 "
         ]
       },
       {
