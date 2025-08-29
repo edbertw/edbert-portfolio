@@ -6,9 +6,9 @@ export default function Experience() {
         position: "Cloud / Software Engineer Intern",
         period: "Jun 2025 – Aug 2025",
         details: [
-          "Designed a custom Gateway routing to 30+ protected multimodal AI API endpoints using Node.js, Express, FastAPI and Cloud Firestore, directly handling multimodal file processing and allowing streamlined connection to other microservices",
-          "Deployed endpoints on E2 Virtual Machines (VMs) with NGINX proxy on GCP Compute Engine and serverless architectures (Firebase and Cloud Run), integrated to a JavaScript frontend via Cloud Firestore Database and REST",
-          "Utilize AWS SigV4 token signing on Google Cloud Storage (GCS) Private Buckets through Cloud CDN and HTTPS Load Balancing for serving of 5+ static assets. Led to 65.7% faster load times and enhanced asset security",
+          "Designed a custom API Gateway routing to 30+ protected multimodal AI API endpoints using Node.js, Express, FastAPI and Cloud Firestore Database",
+          "Deployed all REST endpoints on GCP Compute Engine with Nginx proxy as well as serverless architectures (Firebase Functions, Cloud Run)",
+          "Utilize AWS SigV4 token signing on Google Cloud Storage (GCS) Private Buckets through Cloud CDN and HTTPS Cloud Load Balancing for serving of 5+ static assets. Achieved low-latency delivery and enhanced asset security",
           "Led full-stack initiatives to automate in-house developed LLM’s high-volume file fetch, processing and uploads with Google, Dropbox and Azure OAuth 2.0 "
         ]
       },
@@ -28,7 +28,7 @@ export default function Experience() {
         position: "Data Scientist Intern",
         period: "Feb 2025 – Apr 2025",
         details: [
-          "Built 8 domain-adapted Neural Machine Translation (NMT) system by fine-tuning Gemma2 SEA-LION 9B, optimizing LLM operations by over 80% with quantized LoRA and lifting average BLEU score by 24.4, outperforming OpenAI's GPT-4o by 200%",
+          "Built 8 domain-adapted Neural Machine Translation (NMT) system by fine-tuning Gemma2 SEA-LION 9B, optimizing LLM operations by over 80% with quantized LoRA and lifting average BLEU score by 24.4. Outperforming OpenAI's GPT-4o by 200%",
           "Attempted to solve the domain adaptation problem by aggregating multiple samples of parallel corpus datasets found from 8 cutting-edge NMT research, through degrees of sentence formality and length",
           "Performed literature review on LLM Misalignment and jailbreaking issues, focusing on cultural and low-resource languages, by analyzing existing comprehensive benchmarks. Assisted in preparing proposal to Open Philanthropy Technical AI Safety Research grant",
           "Integrated dynamic data analytics dashboard from PowerBI, Chart.js and React.js to company website. Boosted web traffic and engagement by 30%",
@@ -47,7 +47,7 @@ export default function Experience() {
         ]
       }
     ];
- 
+
     return (
       <section className="experience" id="experience">
         <h2 className="heading">Recent <span>Experiences</span></h2>
