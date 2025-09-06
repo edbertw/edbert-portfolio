@@ -21,6 +21,7 @@ function MyApp({ Component, pageProps }) {
       ScrollReveal().reveal('.home-img,.services-container,.portfolio-box,.contact form', { origin: 'bottom' });
       ScrollReveal().reveal('.home-content h1,.about-img', { origin: 'left' });
       ScrollReveal().reveal('.home-content p,.about-content', { origin: 'right' });
+      ScrollReveal().reveal('.education-container,.education-item,.award-item', { origin: 'top' });
     }
   }, []);
 

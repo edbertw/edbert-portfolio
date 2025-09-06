@@ -17,12 +17,12 @@ export default function Home() {
       typed.destroy();
     };
   }, []);
-
+  
   return (
     <section className="home" id="home">
       <div className="home-content">
-        <h3>Hello, My name is</h3>
-        <h1>Edbert</h1>
+        <h3>Hey! My name is</h3>
+        <h1>Edbert W.</h1>
         <h3>And I&apos;m a <span className="multiple-text" ref={typedRef}></span></h3>
         <div className="social-media">
           <a href="https://github.com/edbertw"><i className='bx bxl-github'></i></a>

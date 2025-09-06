@@ -35,11 +35,11 @@ export default function Header() {
 
   return (
     <header className="header">
-      <a href="#" className="logo">Edbert Widjaja</a>
       <div id="menu-icon" className={`bx ${menuOpen ? 'bx-x' : 'bx-menu'}`} onClick={toggleMenu}></div>
       <nav className={`navbar ${menuOpen ? 'active' : ''}`}>
         <Link href="#home" className={activeLink === 'home' ? 'active' : ''}>Home</Link>
         <Link href="#about" className={activeLink === 'about' ? 'active' : ''}>About</Link>
+        <Link href="#education" className={activeLink === 'education' ? 'active' : ''}>Education</Link>
         <Link href="#experience" className={activeLink === 'experience' ? 'active' : ''}>Experience</Link>
         <Link href="#recommendations" className={activeLink === 'recommendations' ? 'active' : ''}>Recommendations</Link>
         <Link href="#portfolio" className={activeLink === 'portfolio' ? 'active' : ''}>Projects</Link>

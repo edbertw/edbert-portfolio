@@ -74,11 +74,21 @@
     display: none;
  }
 
- .home{
+.home{
     display: flex;
     justify-content: center;
     align-items: center;
- }
+    position: relative;
+}
+
+.home-content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
  .home-content h3 {
     font-size: 3.2rem;
@@ -141,6 +151,20 @@
  .btn:hover {
     box-shadow: none;
  }
+
+/* CV Download Button - Fixed positioning */
+.home .btn {
+    position: relative;
+    z-index: 10;
+    margin-top: 2rem;
+    transform: none !important;
+    animation: none !important;
+}
+
+/* Ensure typed text flows naturally while keeping button stable */
+.multiple-text {
+    display: inline-block;
+}
 /* About section styles */
 .about {
     display: flex;
@@ -203,11 +227,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     padding: 1.5rem;
     background: var(--second-bg-color);
     border-radius: 1rem;
     transition: transform 0.3s ease;
+    width: 100%;
+    height: 120px;
+    min-height: 120px;
+    box-sizing: border-box;
 }
 
 .skill-item:hover {
@@ -224,12 +253,21 @@
     font-size: 1.6rem;
     font-weight: 500;
     color: var(--text-color);
+    text-align: center;
+    line-height: 1.2;
+    word-wrap: break-word;
+    max-width: 100%;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .skill-item {
+        height: 110px;
+        min-height: 110px;
     }
     
     .about-img img {
@@ -240,6 +278,15 @@
 @media (max-width: 450px) {
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .skill-item {
+        height: 100px;
+        min-height: 100px;
+    }
+    
+    .skill-item span {
+        font-size: 1.4rem;
     }
 }
 
@@ -741,4 +788,238 @@
        font-size: 1.4rem;
        margin-bottom: 1rem;
    }
+}
+
+/* Education Section Styles */
+.education {
+    background: var(--bg-color);
+    padding: 10rem 9% 2rem;
+}
+
+.education-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.education-item {
+    background: var(--second-bg-color);
+    border-radius: 1.5rem;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-10px);
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.institution-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.institution-logo {
+    flex-shrink: 0;
+}
+
+.university-logo {
+    border-radius: 1rem;
+    object-fit: contain;
+    background: var(--bg-color);
+    padding: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.institution-details h3 {
+    font-size: 2.2rem;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+}
+
+.institution-details p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+.degree-info h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.degree-info p {
+    font-size: 1.4rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.gpa-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.gpa-label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.gpa-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--main-color);
+    background: var(--bg-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.education-details {
+    list-style-type: none;
+    padding-left: 2rem;
+}
+
+.education-details li {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    position: relative;
+    line-height: 1.6;
+    padding-left: 2.5rem;
+}
+
+.education-details li:before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+    font-size: 1.8rem;
+}
+
+/* Awards Section Styles */
+.awards-section {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.awards-section h3 {
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+.awards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.award-item {
+    background: var(--second-bg-color);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.award-item:hover {
+    transform: translateY(-5px);
+}
+
+.award-header h4 {
+    font-size: 1.8rem;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.award-institution {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-bottom: 0.3rem;
+}
+
+.award-year {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.award-description {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Responsive adjustments for Education */
+@media (max-width: 768px) {
+    .education-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .institution-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .institution-logo {
+        align-self: center;
+    }
+    
+    .degree-info {
+        margin-top: 1.5rem;
+    }
+    
+    .education-details li {
+        font-size: 1.5rem;
+    }
+    
+    .awards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+    .education-item {
+        padding: 2rem;
+    }
+    
+    .university-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .institution-details h3 {
+        font-size: 2rem;
+    }
+    
+    .education-details li {
+        font-size: 1.4rem;
+    }
+    
+    .award-item {
+        padding: 2rem;
+    }
+    
+    .award-header h4 {
+        font-size: 1.6rem;
+    }
+    
+    .award-description {
+        font-size: 1.4rem;
+    }
 }
