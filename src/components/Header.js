@@ -32,9 +32,10 @@ export default function Header() {
     const navbar = document.querySelector('.navbar');
     navbar.classList.toggle('active');
   };
-
+  
   return (
     <header className="header">
+      <a href="#" className="logo">E.W.</a>
       <div id="menu-icon" className={`bx ${menuOpen ? 'bx-x' : 'bx-menu'}`} onClick={toggleMenu}></div>
       <nav className={`navbar ${menuOpen ? 'active' : ''}`}>
         <Link href="#home" className={activeLink === 'home' ? 'active' : ''}>Home</Link>

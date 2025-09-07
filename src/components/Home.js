@@ -7,9 +7,9 @@ export default function Home() {
 
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
-      strings: ['Data Science Student @ HKU', 'Prospective Data Scientist'],
-      typeSpeed: 100,
-      backSpeed: 100,
+      strings: ['Data Science Penultimate @ HKU', 'Prospective Machine Learning Engineer'],
+      typeSpeed: 50,
+      backSpeed: 50,
       backDelay: 1000,
       loop: true
     });
@@ -18,7 +18,7 @@ export default function Home() {
       typed.destroy();
     };
   }, []);
-  
+ 
   return (
     <section className="home" id="home">
       <div className="home-content">
@@ -40,6 +40,7 @@ export default function Home() {
           <a href="https://www.linkedin.com/in/edbertwidjaja/"><i className='bx bxl-linkedin-square'></i></a>
         </div>
         <a href="/EdbertWidjaja_CV.pdf" className="btn" download>Download CV</a>
+        <a href="/Edbert-AcademicTranscript.pdf" className="btn" download>Download Transcript</a>
       </div>
     </section>
   );
