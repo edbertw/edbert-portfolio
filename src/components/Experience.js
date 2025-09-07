@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Experience() {
     const experiences = [
       {
@@ -5,6 +7,7 @@ export default function Experience() {
         location: "Hong Kong",
         position: "Cloud / Software Engineer Intern",
         period: "Jun 2025 – Aug 2025",
+        logo: "/src/langya.webp",
         details: [
           "Designed a custom API Gateway routing to 30+ protected multimodal AI API endpoints using Node.js, Express, FastAPI and Cloud Firestore Database",
           "Deployed all REST endpoints on GCP Compute Engine with Nginx proxy as well as serverless architectures (Firebase Functions, Cloud Run)",
@@ -17,6 +20,7 @@ export default function Experience() {
         location: "Jakarta, Indonesia",
         position: "LLM Engineer Intern",
         period: "May 2025 – Jun 2025",
+        logo: "/src/naxon.jpeg",
         details: [
           "Applied multi-agent networks for an Adaptive RAG chatbot with G-Sheets Model Context Protocol (MCP) server integration, assembled through LangGraph, Azure OpenAI and PostgreSQL for memory handling, automating 85% of spreadsheet workflows",
           "Designed a multi-agent RAG system that enhances its replies through automatic changes in system prompt and ChromaDB knowledge base"
@@ -27,6 +31,7 @@ export default function Experience() {
         location: "Hong Kong",
         position: "Data Scientist Intern",
         period: "Feb 2025 – Apr 2025",
+        logo: "/src/migrasia.png",
         details: [
           "Built 8 domain-adapted Neural Machine Translation (NMT) system by fine-tuning Gemma2 SEA-LION 9B, optimizing LLM operations by over 80% with quantized LoRA and lifting average BLEU score by 24.4. Outperforming OpenAI's GPT-4o by 200%",
           "Attempted to solve the domain adaptation problem by aggregating multiple samples of parallel corpus datasets found from 8 cutting-edge NMT research, through degrees of sentence formality and length",
@@ -40,6 +45,7 @@ export default function Experience() {
         location: "Hong Kong",
         position: "Data Scientist Intern",
         period: "Jan 2025 – Jan 2025",
+        logo: "/src/chinotech.png",
         details: [
           "Engineered large-scale data migration to IoT platform (Thingsboard) via Shell Script, HTTP REST API, MQTT, enabling real-time dashboard integration to Thingsboard. Enabled 55% more anomalies detected",
           "Developed and deployed ML and statistical-based (Prophet by Facebook, Fourier Transform, Random Forest, Linear Regression, ARIMA, SARIMAX) predictive analytics solutions for toilet utilities consumption in Hong Kong International Airport and unsupervised algorithms (DBSCAN, K-Means) for anomaly detection system through Trendz Analytics (Thingsboard) with AWS EC2, Docker and PostgreSQL",
@@ -57,6 +63,15 @@ export default function Experience() {
             <div className="experience-item" key={index}>
               <div className="experience-header">
                 <div className="company-info">
+                  {exp.logo ? (
+                    <div className="company-logo">
+                      <Image src={exp.logo} alt={`${exp.company} logo`} width={48} height={48} className="company-logo-img" />
+                    </div>
+                  ) : (
+                    <div className="company-logo-fallback" aria-hidden="true">
+                      {exp.company.split(' ').map(w => w[0]).join('').slice(0, 3).toUpperCase()}
+                    </div>
+                  )}
                   <h3>{exp.company}</h3>
                   <p>{exp.location}</p>
                 </div>
