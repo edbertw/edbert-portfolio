@@ -221,6 +221,8 @@
     justify-items: center;
     margin: 0 auto;
     max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .skill-item {
@@ -263,11 +265,14 @@
 @media (max-width: 768px) {
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 0 0.5rem;
     }
     
     .skill-item {
         height: 110px;
         min-height: 110px;
+        padding: 1.2rem;
     }
     
     .about-img img {
@@ -278,15 +283,24 @@
 @media (max-width: 450px) {
     .skills-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
     }
     
     .skill-item {
         height: 100px;
         min-height: 100px;
+        padding: 1rem;
+        margin: 0;
     }
     
     .skill-item span {
         font-size: 1.4rem;
+    }
+    
+    .skill-item img {
+        width: 40px;
+        height: 40px;
     }
 }
 
