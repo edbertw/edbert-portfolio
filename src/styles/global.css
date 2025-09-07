@@ -90,6 +90,26 @@
     align-items: center;
 }
 
+.home-image {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--main-color);
+    box-shadow: 0 0 2rem var(--main-color);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 3rem var(--main-color);
+}
+
  .home-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
@@ -616,6 +636,10 @@
    .home-content h1{
       font-size: 5rem;
    }
+   .profile-image {
+      width: 150px;
+      height: 150px;
+   }
    .home-img img{
       width: 70vw;
       margin-top: 4rem;
@@ -658,6 +682,11 @@
 }
 
 @media(max-width:365px){
+   .profile-image {
+      width: 120px;
+      height: 120px;
+   }
+   
    .home-img img{
       width: 90vw;
    }

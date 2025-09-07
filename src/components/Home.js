@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
+import Image from 'next/image';
 
 export default function Home() {
   const typedRef = useRef(null);
@@ -21,9 +22,17 @@ export default function Home() {
   return (
     <section className="home" id="home">
       <div className="home-content">
-        <h3>Hey! My name is</h3>
+        <div className="home-image">
+          <Image 
+            src="/src/self.jpg" 
+            alt="Edbert Widjaja" 
+            width={200} 
+            height={200}
+            className="profile-image"
+          />
+        </div>
         <h1>Edbert W.</h1>
-        <h3>And I&apos;m a <span className="multiple-text" ref={typedRef}></span></h3>
+        <h3><span className="multiple-text" ref={typedRef}></span></h3>
         <div className="social-media">
           <a href="https://github.com/edbertw"><i className='bx bxl-github'></i></a>
           <a href="mailto:edbertwid88@gmail.com"><i className='bx bxs-envelope'></i></a>

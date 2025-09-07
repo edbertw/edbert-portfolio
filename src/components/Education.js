@@ -17,17 +17,18 @@ export default function Education() {
             ]
         }
     ];
-
+    
     const awards = [
         {
             title: "Dean's  Honours List (2023-2024)",
+            institution: "The University of Hong Kong",
             year: "August 2025",
             description: "The HKU Engineering Dean's Honours List recognizes students with outstanding academic achievement"
         },
         {
-            title: "HKU Belt and Road Scholarship",
+            title: "HKU Belt and Road Scholarship (2023-2027)",
             institution: "The University of Hong Kong",
-            year: "2023 - 2027",
+            year: "September 2023",
             description: "Supported by the Hong Kong government, this scholarship recognises outstanding students from participating Belt and Road countries, including Indonesia, Malaysia, Thailand, Myanmar, Mongolia and Kazakhstan, among others."
         }
     ];

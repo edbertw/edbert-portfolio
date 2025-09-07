@@ -39,13 +39,13 @@ export default function About() {
       { name: 'Firebase', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg' },
       { name: 'Supabase', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/supabase/supabase-original.svg' },
     ];
- 
+
     return (
       <section className="about" id="about">
         <div className="about-content">
           <h2 className="heading">About<span> Edbert</span></h2>
-          <h3>Aspiring Data Scientist, ML Engineer and Software Engineer</h3>
-          <p>Experience with building smart and AI-powered data systems, real-time dynamic and interactive dashboards, agentic AI and LLM applications utilizing state-of-the-art frameworks and tools, web development and full-stack containerized applications ready for deployment.</p>
+          <h3>Aspiring Data Scientist, Machine Learning Engineer and Software Engineer</h3>
+          <p>Experience with cloud computing, building smart and AI-powered data systems, real-time dynamic and interactive dashboards, agentic AI and LLM applications utilizing state-of-the-art frameworks and tools, web development and full-stack applications.</p>
         </div>
         <div className="about-img">
           <Image src="/src/2906282.jpg" alt="About Edbert" width={600} height={200}/>
