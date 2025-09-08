@@ -38,13 +38,27 @@ export default function Header() {
       <a href="#" className="logo">E.W.</a>
       <div id="menu-icon" className={`bx ${menuOpen ? 'bx-x' : 'bx-menu'}`} onClick={toggleMenu}></div>
       <nav className={`navbar ${menuOpen ? 'active' : ''}`}>
-        <Link href="#home" className={activeLink === 'home' ? 'active' : ''}>Home</Link>
-        <Link href="#about" className={activeLink === 'about' ? 'active' : ''}>About</Link>
-        <Link href="#education" className={activeLink === 'education' ? 'active' : ''}>Education</Link>
-        <Link href="#experience" className={activeLink === 'experience' ? 'active' : ''}>Experience</Link>
-        <Link href="#recommendations" className={activeLink === 'recommendations' ? 'active' : ''}>Recommendations</Link>
-        <Link href="#portfolio" className={activeLink === 'portfolio' ? 'active' : ''}>Projects</Link>
-        <Link href="#contact" className={activeLink === 'contact' ? 'active' : ''}>Contact</Link>
+        <Link href="#home" className={activeLink === 'home' ? 'active' : ''} aria-label="Home">
+          <span className="nav-link"><i className='bx bx-home-alt nav-icon'></i><span>Home</span></span>
+        </Link>
+        <Link href="#about" className={activeLink === 'about' ? 'active' : ''} aria-label="About">
+          <span className="nav-link"><i className='bx bx-user nav-icon'></i><span>About</span></span>
+        </Link>
+        <Link href="#education" className={activeLink === 'education' ? 'active' : ''} aria-label="Education">
+          <span className="nav-link"><i className='bx bx-book-open nav-icon'></i><span>Education</span></span>
+        </Link>
+        <Link href="#experience" className={activeLink === 'experience' ? 'active' : ''} aria-label="Experience">
+          <span className="nav-link"><i className='bx bx-briefcase nav-icon'></i><span>Experience</span></span>
+        </Link>
+        <Link href="#recommendations" className={activeLink === 'recommendations' ? 'active' : ''} aria-label="Recommendations">
+          <span className="nav-link"><i className='bx bx-message-dots nav-icon'></i><span>Recs</span></span>
+        </Link>
+        <Link href="#portfolio" className={activeLink === 'portfolio' ? 'active' : ''} aria-label="Projects">
+          <span className="nav-link"><i className='bx bx-code-alt nav-icon'></i><span>Projects</span></span>
+        </Link>
+        <Link href="#contact" className={activeLink === 'contact' ? 'active' : ''} aria-label="Contact">
+          <span className="nav-link"><i className='bx bx-envelope nav-icon'></i><span>Contact</span></span>
+        </Link>
       </nav>
     </header>
   );

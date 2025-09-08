@@ -35,7 +35,7 @@ export default function Education() {
 
     return (
         <section className="education" id="education">
-            <h2 className="heading">Education & <span>Awards</span></h2>
+            <h2 className="heading">Education</h2>
             
             <div className="education-container">
                 {education.map((edu, index) => (
