@@ -10,14 +10,14 @@ export default function Education() {
             gpa: "3.77/4.3",
             image: "/src/hku.jpg",
             details: [
-                "Core coursework: Intro to Data Science, Data Structures and Algorithms, Probability and Statistics, Machine Learning, Statistical Learning, Database Management Systems (MySQL), Object-Oriented Programming (Java)",
+                "Core coursework: Intro to Data Science, Data Structures and Algorithms, Probability and Statistics, Machine Learning, Statistical Learning, Artificial Intelligence, Database Management Systems (MySQL), Object-Oriented Programming (Java)",
                 "Minor coursework: Financial Accounting, Microeconomics, Macroeconomics, Corporate Finance",
                 "Hackathons: Alibaba International Global E-Commerce Challenge 2024, Generative AI Hackathon for Social Development Goals 2024, Morgan Stanley Asia Code To Give Hackathon 2025",
                 "Extracurriculars: HKU Data Science Association Executive Committee (2024-2025)"
             ]
         }
     ];
-    
+   
     const awards = [
         {
             title: "Dean's  Honours List (2023-2024)",
