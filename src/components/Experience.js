@@ -5,7 +5,7 @@ export default function Experience() {
       {
         company: "Langya AI Limited",
         location: "Hong Kong",
-        position: "Cloud / Software Engineer Intern",
+        position: "Software Engineer Intern",
         period: "Jun 2025 – Aug 2025",
         logo: "/src/langya.webp",
         details: [
@@ -22,7 +22,7 @@ export default function Experience() {
         period: "May 2025 – Jun 2025",
         logo: "/src/naxon.jpeg",
         details: [
-          "Applied multi-agent networks for an Adaptive RAG chatbot with G-Sheets Model Context Protocol (MCP) server integration, assembled through LangGraph, Azure OpenAI and PostgreSQL for memory handling, automating 85% of spreadsheet workflows",
+          "Applied multi-agent networks for an Adaptive RAG chatbot with Google Sheets Model Context Protocol (MCP) server integration, assembled through LangGraph, Azure OpenAI, PostgreSQL for memory handling and Flask for REST APIs",
           "Designed a multi-agent RAG system that enhances its replies through automatic changes in system prompt and ChromaDB knowledge base"
         ]
       },
@@ -33,11 +33,10 @@ export default function Experience() {
         period: "Feb 2025 – Apr 2025",
         logo: "/src/migrasia.png",
         details: [
-          "Built 8 domain-adapted Neural Machine Translation (NMT) system by fine-tuning Gemma2 SEA-LION 9B, optimizing LLM operations by over 80% with quantized LoRA and lifting average BLEU score by 24.4. Outperforming OpenAI's GPT-4o by 200%",
-          "Attempted to solve the domain adaptation problem by aggregating multiple samples of parallel corpus datasets found from 8 cutting-edge NMT research, through degrees of sentence formality and length",
-          "Performed literature review on LLM Misalignment and jailbreaking issues, focusing on cultural and low-resource languages, by analyzing existing comprehensive benchmarks. Assisted in preparing proposal to Open Philanthropy Technical AI Safety Research grant",
+          "Built 8 domain-adapted Neural Machine Translation (NMT) system by fine-tuning Gemma2 SEA-LION 9B, optimizing LLM operations by over 80% with quantized LoRA and lifting average BLEU score by 24.4. Outperformed OpenAI's GPT-4o by 200%",
+          "Attempted to solve the domain adaptation translation issue by aggregating multiple samples of parallel corpus datasets found from 8 cutting-edge NMT research, through metrics of sentence formality and length",
           "Integrated dynamic data analytics dashboard from PowerBI, Chart.js and React.js to company website. Boosted web traffic and engagement by 30%",
-          "Devised and designed a full-stack Agentic AI grant writer system, utilizing RAG technologies (ChromaDB, OpenAI, LangChain), frontend technologies (HTML/CSS/JS), Django and Django REST Framework and Git/GitHub for streamlined version control. Raised internal efficiency by 75%"
+          "Collaborated in an agile team to deliver a full-stack AI grant writer utilizing RAG pipelines (LangChain, ChromaDB, etc), JavaScript, Django REST Framework and Git for streamlined version control"
         ]
       },
       {
@@ -47,9 +46,8 @@ export default function Experience() {
         period: "Jan 2025 – Jan 2025",
         logo: "/src/chinotech.png",
         details: [
-          "Engineered large-scale data migration to IoT platform (Thingsboard) via Shell Script, HTTP REST API, MQTT, enabling real-time dashboard integration to Thingsboard. Enabled 55% more anomalies detected",
-          "Developed and deployed ML and statistical-based (Prophet by Facebook, Fourier Transform, Random Forest, Linear Regression, ARIMA, SARIMAX) predictive analytics solutions for toilet utilities consumption in Hong Kong International Airport and unsupervised algorithms (DBSCAN, K-Means) for anomaly detection system through Trendz Analytics (Thingsboard) with AWS EC2, Docker and PostgreSQL",
-          "Gave a final presentation on outcomes of the project and prototype to several stakeholders as well as infrastructure suggestions"
+          "Engineered large-scale data migration to Thingsboard via ShellScript, HTTP REST API, MQTT. Enabled 55% more anomalies detected",
+          "Developed and deployed ML-based predictive analytics platform with AWS EC2, Docker, PostgreSQL and Trendz Analytics"
         ]
       }
     ];
