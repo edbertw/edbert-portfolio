@@ -29,7 +29,7 @@ export default function Experience() {
       {
         company: "Migrasia",
         location: "Hong Kong",
-        position: "Data Scientist Intern",
+        position: "Machine Learning Engineer Intern",
         period: "Feb 2025 – Apr 2025",
         logo: "/src/migrasia.png",
         details: [
