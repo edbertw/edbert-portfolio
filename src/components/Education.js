@@ -17,7 +17,7 @@ export default function Education() {
             ]
         }
     ];
-   
+  
     const awards = [
         {
             title: "Dean's  Honours List (2023-2024)",

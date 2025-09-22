@@ -9,6 +9,12 @@ export default function Portfolio() {
         link: "https://github.com/edbertw/STOCKNAVIGATOR"
       },
       {
+        title: "Morgan Stanley Code To Give 2025 - DinoLearn",
+        description: "An AI-powered mobile application to support English learning for children",
+        image: "/src/ms_ctg.jpeg",
+        link: "https://github.com/Strengthless/ms-hackathon-2025-team8"
+      },
+      {
         title: "Grade Your IELTS!",
         description: "Experimenting different NLP/ML/DL frameworks for automated essay grading. Click to learn more",
         image: "/src/essay.jpg",

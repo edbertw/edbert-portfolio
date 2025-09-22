@@ -9,7 +9,7 @@ export default function Experience() {
         period: "Jun 2025 – Aug 2025",
         logo: "/src/langya.webp",
         details: [
-          "Designed a custom API Gateway routing to 30+ protected multimodal AI API endpoints using Node.js, Express, FastAPI and Cloud Firestore Database",
+          "Designed a custom API Gateway routing to 30+ protected Vertex AI API endpoints using Node.js, Express, FastAPI and Cloud Firestore Database",
           "Deployed all REST endpoints on GCP Compute Engine with Nginx proxy as well as serverless architectures (Firebase Functions, Cloud Run)",
           "Utilize AWS SigV4 token signing on Google Cloud Storage (GCS) Private Buckets through Cloud CDN and HTTPS Cloud Load Balancing for serving of 5+ static assets. Achieved low-latency delivery and enhanced asset security",
           "Led full-stack initiatives to automate in-house developed LLM’s high-volume file fetch, processing and uploads with Google, Dropbox and Azure OAuth 2.0 "
@@ -18,7 +18,7 @@ export default function Experience() {
       {
         company: "Naxon.ai",
         location: "Jakarta, Indonesia",
-        position: "LLM Engineer Intern",
+        position: "Machine Learning Engineer Intern",
         period: "May 2025 – Jun 2025",
         logo: "/src/naxon.jpeg",
         details: [
