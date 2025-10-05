@@ -7,7 +7,7 @@ export default function Home() {
 
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
-      strings: ['Data Science Penultimate @ HKU', 'Prospective Machine Learning Engineer'],
+      strings: ['Data Science Penultimate @ HKU', 'Prospective AI/ML Engineer'],
       typeSpeed: 50,
       backSpeed: 50,
       backDelay: 1000,
