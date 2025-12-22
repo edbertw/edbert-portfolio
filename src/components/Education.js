@@ -15,6 +15,17 @@ export default function Education() {
                 "Hackathons: Alibaba International Global E-Commerce Challenge 2024, Generative AI Hackathon for Social Development Goals 2024, Morgan Stanley Asia Code To Give Hackathon 2025",
                 "Extracurriculars: HKU Data Science Association Executive Committee (2024-2025)"
             ]
+        },
+        {
+            institution: "King's College London",
+            location: "London, United Kingdom",
+            degree: "HKU WorldWide Exchange Program, Data Science",
+            period: "Jan 2026 – Jun 2026",
+            gpa: "N/A",
+            image: "/src/kcl.png",
+            details: [
+                "Core coursework: Linear Statistical Analysis, Algorithmic Finance, Information Security, Principles of Marketing"
+            ]
         }
     ];
   
@@ -28,7 +39,7 @@ export default function Education() {
         {
             title: "HKU Belt and Road Scholarship (2023-2027)",
             institution: "The University of Hong Kong",
-            year: "September 2023",
+            year: "2023-2027",
             description: "Supported by the Hong Kong government, this scholarship recognises outstanding students from participating Belt and Road countries, including Indonesia, Malaysia, Thailand, Myanmar, Mongolia and Kazakhstan, among others."
         }
     ];
