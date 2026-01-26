@@ -7,7 +7,7 @@ export default function Education() {
             location: "Hong Kong",
             degree: "Bachelor of Engineering in Data Science, Minor in Finance",
             period: "2023 – 2027",
-            gpa: "3.77/4.3",
+            gpa: "3.83/4.3",
             image: "/src/hku.jpg",
             details: [
                 "Core coursework: Intro to Data Science, Data Structures and Algorithms, Probability and Statistics, Machine Learning, Statistical Learning, Artificial Intelligence, Database Management Systems (MySQL), Object-Oriented Programming (Java)",
@@ -31,10 +31,10 @@ export default function Education() {
   
     const awards = [
         {
-            title: "Dean's  Honours List (2023-2024)",
+            title: "Dean's  Honours List",
             institution: "The University of Hong Kong",
             year: "August 2025",
-            description: "The HKU Engineering Dean's Honours List recognizes students with outstanding academic achievement"
+            description: "AY 2023-2024"
         },
         {
             title: "HKU Belt and Road Scholarship (2023-2027)",
