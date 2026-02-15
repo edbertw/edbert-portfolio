@@ -18,7 +18,7 @@ export default function Home() {
       typed.destroy();
     };
   }, []);
- 
+
   return (
     <section className="home" id="home">
       <div className="home-content">
@@ -40,7 +40,7 @@ export default function Home() {
           <a href="https://www.linkedin.com/in/edbertwidjaja/"><i className='bx bxl-linkedin-square'></i></a>
         </div>
         <a href="/EdbertWidjaja_CV.pdf" className="btn" download>Download CV</a>
-        <a href="/Edbert-AcademicTranscript.pdf" className="btn" download>Download Transcript</a>
+        <a href="/EdbertWidjaja_Transcript.pdf" className="btn" download>Download Transcript</a>
       </div>
     </section>
   );

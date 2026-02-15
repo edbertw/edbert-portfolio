@@ -3,6 +3,16 @@ import Image from 'next/image';
 export default function Experience() {
     const experiences = [
       {
+        company: "Morgan Stanley",
+        location: "Hong Kong",
+        position: "Incoming Summer Technology Analyst",
+        period: "Jun 2026 – Aug 2026",
+        logo: "/src/morgan_stanley.jpg",
+        details: [
+          "Institutional Securities Technology"
+        ]
+      },
+      {
         company: "Langya AI Limited",
         location: "Hong Kong",
         position: "Software Engineer Intern",
@@ -10,8 +20,8 @@ export default function Experience() {
         logo: "/src/langya.webp",
         details: [
           "Designed a custom API Gateway routing to 30+ protected Vertex AI API endpoints using Node.js, Express, FastAPI and Cloud Firestore Database",
-          "Deployed all REST endpoints on GCP Compute Engine with Nginx proxy as well as serverless architectures (Firebase Functions, Cloud Run)",
-          "Utilize AWS SigV4 token signing on Google Cloud Storage (GCS) Private Buckets through Cloud CDN and HTTPS Cloud Load Balancing for serving of 5+ static assets. Achieved low-latency delivery and enhanced asset security",
+          "Deployed all REST endpoints on GCP's Compute Engine with Nginx proxy as well as serverless architectures (Firebase Cloud Functions, GCP's Cloud Run)",
+          "Utilize AWS SigV4 token signing on Google Cloud Storage (GCS) Private Buckets through Cloud CDN and Cloud Load Balancing for serving of 5+ static assets. Achieved low-latency delivery and enhanced asset security",
           "Led full-stack initiatives to automate in-house developed LLM’s high-volume file fetch, processing and uploads with Google, Dropbox and Azure OAuth 2.0 "
         ]
       },
@@ -33,10 +43,10 @@ export default function Experience() {
         period: "Feb 2025 – Apr 2025",
         logo: "/src/migrasia.png",
         details: [
-          "Built 8 domain-adapted Neural Machine Translation (NMT) system by fine-tuning Gemma2 SEA-LION 9B, optimizing LLM operations by over 80% with quantized LoRA and lifting average BLEU score by 24.4. Outperformed OpenAI's GPT-4o by 200%",
-          "Attempted to solve the domain adaptation translation issue by aggregating multiple samples of parallel corpus datasets found from 8 cutting-edge NMT research, through metrics of sentence formality and length",
+          "Built multiple domain-adapted Neural Machine Translation (NMT) system by fine-tuning Gemma2 SEA-LION 9B, optimizing LLM operations by over 80% with quantized LoRA and lifting average BLEU score by 24.4. Outperformed OpenAI's GPT-4o by 200%",
+          "Attempted to solve the domain adaptation translation issue by aggregating multiple samples of parallel corpus datasets found from 8 cutting-edge NMT research, through degrees of sentence formality and length",
           "Integrated dynamic data analytics dashboard from PowerBI, Chart.js and React.js to company website. Boosted web traffic and engagement by 30%",
-          "Collaborated in an agile team to deliver a full-stack AI grant writer utilizing RAG pipelines (LangChain, ChromaDB, etc), JavaScript, Django REST Framework and Git for streamlined version control"
+          "Collaborated in an agile team to deliver a full-stack AI grant writer utilizing RAG pipelines (OpenAI Embeddings, LangChain, ChromaDB, etc), JavaScript, Django REST Framework and Git for streamlined version control"
         ]
       },
       {
@@ -46,8 +56,8 @@ export default function Experience() {
         period: "Jan 2025 – Jan 2025",
         logo: "/src/chinotech.png",
         details: [
-          "Engineered large-scale data migration to Thingsboard via ShellScript, HTTP REST API, MQTT. Enabled 55% more anomalies detected",
-          "Developed and deployed ML-based predictive analytics platform with AWS EC2, Docker, PostgreSQL and Trendz Analytics"
+          "Ran large-scale telemetry data migration to Thingsboard IoT via Shell Scripting, REST APIs and MQTT Pub/Sub pattern, enabling 55% more cross-platform anomalies detected",
+          "Established and deployed Machine Learning-based predictive (Trendz) analytics platform with AWS EC2, Docker, OpenJDK and PostgreSQL JDBC, allowing for firm-wide adoption"
         ]
       }
     ];

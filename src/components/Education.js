@@ -12,7 +12,7 @@ export default function Education() {
             details: [
                 "Core coursework: Intro to Data Science, Data Structures and Algorithms, Probability and Statistics, Machine Learning, Statistical Learning, Artificial Intelligence, Database Management Systems (MySQL), Object-Oriented Programming (Java)",
                 "Minor coursework: Financial Accounting, Microeconomics, Macroeconomics, Corporate Finance",
-                "Hackathons: Alibaba International Global E-Commerce Challenge 2024, Generative AI Hackathon for Social Development Goals 2024, Morgan Stanley Asia Code To Give Hackathon 2025",
+                "Hackathons: Alibaba International Global E-Commerce Challenge 2024, Inter-University Generative AI Hackathon for Social Development Goals 2024, Morgan Stanley Asia Code To Give Hackathon 2025",
                 "Extracurriculars: HKU Data Science Association Executive Committee (2024-2025)"
             ]
         },
@@ -21,7 +21,7 @@ export default function Education() {
             location: "London, United Kingdom",
             degree: "HKU WorldWide Exchange Program, Data Science",
             period: "Jan 2026 – Jun 2026",
-            gpa: "N/A",
+            gpa: "",
             image: "/src/kcl.png",
             details: [
                 "Core coursework: Linear Statistical Analysis, Algorithmic Finance, Information Security, Principles of Marketing"
@@ -30,6 +30,12 @@ export default function Education() {
     ];
   
     const awards = [
+        {
+            title: "HKU Worldwide Exchange Scholarship",
+            institution: "The University of Hong Kong",
+            year: "February 2026",
+            description: "HKD 14,000 Jointly funded by Reaching Out Award and Lee Shau Kee Scholarships for Student Enrichment"
+        },
         {
             title: "Dean's  Honours List",
             institution: "The University of Hong Kong",
@@ -40,7 +46,7 @@ export default function Education() {
             title: "HKU Belt and Road Scholarship (2023-2027)",
             institution: "The University of Hong Kong",
             year: "2023-2027",
-            description: "Supported by the Hong Kong government, this scholarship recognises outstanding students from participating Belt and Road countries, including Indonesia, Malaysia, Thailand, Myanmar, Mongolia and Kazakhstan, among others."
+            description: "Full-tuition Scholarship, tenable for up to 4 years"
         }
     ];
 
