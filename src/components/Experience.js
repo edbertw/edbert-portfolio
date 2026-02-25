@@ -5,7 +5,7 @@ export default function Experience() {
       {
         company: "Morgan Stanley",
         location: "Hong Kong",
-        position: "Incoming Summer Technology Analyst",
+        position: "Incoming Technology Summer Analyst",
         period: "Jun 2026 – Aug 2026",
         logo: "/src/morgan_stanley.jpg",
         details: [
