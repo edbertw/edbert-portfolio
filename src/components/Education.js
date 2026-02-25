@@ -21,14 +21,14 @@ export default function Education() {
             location: "London, United Kingdom",
             degree: "HKU WorldWide Exchange Program, Data Science",
             period: "Jan 2026 – Jun 2026",
-            gpa: "",
+            gpa: "_",
             image: "/src/kcl.png",
             details: [
                 "Core coursework: Linear Statistical Analysis, Algorithmic Finance, Information Security, Principles of Marketing"
             ]
         }
     ];
-  
+ 
     const awards = [
         {
             title: "HKU Worldwide Exchange Scholarship",

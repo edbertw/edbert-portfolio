@@ -20,7 +20,7 @@ export default function Experience() {
         logo: "/src/langya.webp",
         details: [
           "Designed a custom API Gateway routing to 30+ protected Vertex AI API endpoints using Node.js, Express, FastAPI and Cloud Firestore Database",
-          "Deployed all REST endpoints on GCP's Compute Engine with Nginx proxy as well as serverless architectures (Firebase Cloud Functions, GCP's Cloud Run)",
+          "Deployed REST and GraphQL endpoints on GCP's Compute Engine with Nginx proxy as well as serverless architectures (Firebase Cloud Functions, GCP's Cloud Run)",
           "Utilize AWS SigV4 token signing on Google Cloud Storage (GCS) Private Buckets through Cloud CDN and Cloud Load Balancing for serving of 5+ static assets. Achieved low-latency delivery and enhanced asset security",
           "Led full-stack initiatives to automate in-house developed LLM’s high-volume file fetch, processing and uploads with Google, Dropbox and Azure OAuth 2.0 "
         ]
