@@ -12,9 +12,10 @@ export default function Recommendations() {
 
   const recommendations = [
     {
+      company: "migrasia",
       id: 1,
       name: "Salma Khaled",
-      position: "ML Engineer @ Migrasia",
+      position: "AI/ML Engineer @ Migrasia",
       excerpt: '"Edbert consistently demonstrated professionalism, intellectual curiosity, and a strong work ethic."',
       full: `
         <p><strong>To Whom It May Concern,</strong></p>
@@ -59,6 +60,7 @@ export default function Recommendations() {
       `
     },
     {
+      company: "naxon",
       id: 2,
       name: "Jarvis Sindhuse Apaitan",
       position: "Chief Operating Officer @ Naxon.ai",
@@ -85,6 +87,29 @@ export default function Recommendations() {
         Jarvis Sindhuse Apaitan<br>
         Founder / Chief Operating Officer<br>
         Naxon</strong></p>
+      `
+    },
+    {
+      company: "chinotech",
+      id: 3,
+      name: "Vincent Pang",
+      position: "Chief Technology Officer @ Chinotech International Limited",
+      excerpt: "We sincerely recommend Edbert to be hired for with related positions in AI",
+      full: `
+        <p><strong>To whom it may concern,</strong></p>
+
+        <p>This is to certify that Edbert Widjaja, with HKID F#####, is being offered a
+        position of Software Intern during the period of 16th December, 2024 to 17th January,
+        2025. During the internship, Edbert has been involved in the A.I. project responsible
+        for the predictive maintenance development.</p>
+        
+        <p>We sincerely recommend Edbert to be hired with related positions.</p>
+        
+        
+        <p><strong>Yours sincerely,<br>
+        Vincent Pang<br>
+        Director / Chief Technology Officer<br>
+        Chinotech International Limited</strong></p>
       `
     }
   ];
@@ -120,7 +145,7 @@ export default function Recommendations() {
                 {expanded[rec.id] ? 'View Less' : 'View More'}
               </button>
               <a 
-                href={`/recommendation_${rec.id === 1 ? 'migrasia' : 'naxon'}.pdf`} 
+                href={`/recommendation_${rec.company}.pdf`} 
                 className="btn"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -32,8 +32,7 @@ export default function Experience() {
         period: "May 2025 – Jun 2025",
         logo: "/src/naxon.jpeg",
         details: [
-          "Applied multi-agent networks for an Adaptive RAG chatbot with Google Sheets Model Context Protocol (MCP) server integration, assembled through LangGraph, Azure OpenAI, PostgreSQL for memory handling and Flask for REST APIs",
-          "Designed a multi-agent RAG system that enhances its replies through automatic changes in system prompt and ChromaDB knowledge base"
+          "Developed a smart-revise, multi-agent, client-booking Adaptive RAG chat system with Google Sheets MCP server integration, assembled through FastMCP, LangGraph, Azure OpenAI, ChromaDB, PostgreSQL and Flask"
         ]
       },
       {
